@@ -18,6 +18,7 @@ package com.android.settings.core.gateway;
 
 import co.aospa.settings.display.DcDimmingSettings;
 import co.aospa.settings.display.RefreshRateSettings;
+import co.aospa.settings.gestures.PowerButtonTorchSettings;
 import co.aospa.settings.sound.AdaptivePlaybackSoundSettings;
 
 import com.android.settings.AllInOneTetherSettings;
@@ -352,6 +353,7 @@ public class SettingsGateway {
             RefreshRateSettings.class.getName(),
             DcDimmingSettings.class.getName(),
             AdaptivePlaybackSoundSettings.class.getName(),
+            PowerButtonTorchSettings.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
             StorageDashboardFragment.class.getName(),
