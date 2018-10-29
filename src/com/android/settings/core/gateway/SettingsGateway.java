@@ -19,6 +19,7 @@ package com.android.settings.core.gateway;
 import co.aospa.settings.display.DcDimmingSettings;
 import co.aospa.settings.display.RefreshRateSettings;
 import co.aospa.settings.gestures.VolumeButtonMusicControlGestureSettings;
+import co.aospa.settings.gestures.PowerButtonTorchSettings;
 
 import com.android.settings.AllInOneTetherSettings;
 import com.android.settings.DisplaySettings;
@@ -352,6 +353,7 @@ public class SettingsGateway {
             RefreshRateSettings.class.getName(),
             DcDimmingSettings.class.getName(),
             VolumeButtonMusicControlGestureSettings.class.getName(),
+            PowerButtonTorchSettings.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
             StorageDashboardFragment.class.getName(),
