@@ -57,6 +57,18 @@
         settings:userRestriction="no_adjust_volume"
         settings:controller="com.android.settings.notification.CallVolumePreferenceController"/>
 
+    <ListPreference
+        android:key="ring_vibration_pattern"
+        android:title="@string/ring_vibration_pattern_title"
+        android:entries="@array/ring_vibration_pattern_entries"
+        android:entryValues="@array/ring_vibration_pattern_values"/>
+
+    <ListPreference
+        android:key="notification_vibration_pattern"
+        android:title="@string/notification_vibration_pattern_title"
+        android:entries="@array/notification_vibration_pattern_entries"
+        android:entryValues="@array/notification_vibration_pattern_values"/>
+
     <!-- Hands free profile output switcher -->
     <ListPreference
         android:key="take_call_on_output"
