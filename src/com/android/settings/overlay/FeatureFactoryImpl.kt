@@ -20,6 +20,7 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.VpnManager
 import android.os.UserManager
+import co.aospa.settings.fuelgauge.ParanoidBatterySettingsFeatureProviderImpl
 import com.android.settings.accessibility.AccessibilityMetricsFeatureProvider
 import com.android.settings.accessibility.AccessibilityMetricsFeatureProviderImpl
 import com.android.settings.accessibility.AccessibilitySearchFeatureProvider
@@ -46,7 +47,6 @@ import com.android.settings.dashboard.suggestions.SuggestionFeatureProviderImpl
 import com.android.settings.display.DisplayFeatureProvider
 import com.android.settings.display.DisplayFeatureProviderImpl
 import com.android.settings.enterprise.EnterprisePrivacyFeatureProviderImpl
-import com.android.settings.fuelgauge.BatterySettingsFeatureProviderImpl
 import com.android.settings.fuelgauge.BatteryStatusFeatureProviderImpl
 import com.android.settings.fuelgauge.PowerUsageFeatureProviderImpl
 import com.android.settings.homepage.contextualcards.ContextualCardFeatureProviderImpl
@@ -87,7 +87,7 @@ open class FeatureFactoryImpl : FeatureFactory() {
         BatteryStatusFeatureProviderImpl(appContext)
     }
 
-    override val batterySettingsFeatureProvider by lazy { BatterySettingsFeatureProviderImpl() }
+    override val batterySettingsFeatureProvider by lazy { ParanoidBatterySettingsFeatureProviderImpl() }
 
     override val dashboardFeatureProvider by lazy { DashboardFeatureProviderImpl(appContext) }
 
